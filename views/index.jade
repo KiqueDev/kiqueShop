@@ -1,0 +1,81 @@
+extends layout
+
+block content
+  .row
+      .large-12.columns 
+          .row
+            .large-12
+              #featured(data-orbit='data-orbit')
+                img(src='http://placehold.it/1200x500&text=Slide Image 1', alt='slide image')
+                img(src='http://placehold.it/1200x500&text=Slide Image 2', alt='slide image')
+                img(src='http://placehold.it/1200x500&text=Slide Image 3', alt='slide image')
+
+          .large-12.columns
+            .row
+              .large-4.small-6.columns.simpleCart_shelfItem
+                img.item_image(src='http://placehold.it/500x500&text=Thumbnail')
+                .panel
+                  h5.item_name Item Name1
+                  select.item_size
+                    option(value='Small')  Small 
+                    option(value='Medium')  Medium 
+                    option(value='Large')  Large 
+                  input.item_Quantity(type='text', value='1')
+                  h6.subheader.item_price $24.00
+                  a.item_add(href='javascript:;')  Add to Cart 
+              .large-4.small-6.columns.simpleCart_shelfItem
+                img.item_image(src='http://placehold.it/500x500&text=Thumbnail')
+                .panel
+                  h5.item_name Item Name2
+                  select.item_size
+                    option(value='Small')  Small 
+                    option(value='Medium')  Medium 
+                    option(value='Large')  Large 
+                  input.item_Quantity(type='text', value='1')
+                  h6.subheader.item_price $35.00
+                  a.item_add(href='javascript:;')  Add to Cart 
+              .large-4.small-6.columns.simpleCart_shelfItem
+                img.item_image(src='http://placehold.it/500x500&text=Thumbnail')
+                .panel
+                  h5.item_name Item Name3
+                  select.item_size
+                    option(value='Small')  Small 
+                    option(value='Medium')  Medium 
+                    option(value='Large')  Large 
+                  input.item_Quantity(type='text', value='1')
+                  h6.subheader.item_price $80.00
+                  a.item_add(href='javascript:;')  Add to Cart 
+              .large-4.small-6.columns.simpleCart_shelfItem
+                img.item_image(src='http://placehold.it/500x500&text=Thumbnail')
+                .panel
+                  h5.item_name Item Name4
+                  select.item_size
+                    option(value='Small')  Small 
+                    option(value='Medium')  Medium 
+                    option(value='Large')  Large 
+                  input.item_Quantity(type='text', value='1')
+                  h6.subheader.item_price $350.00
+                  a.item_add(href='javascript:;')  Add to Cart 
+              .large-4.small-6.columns.simpleCart_shelfItem
+                img.item_image(src='http://placehold.it/500x500&text=Thumbnail')
+                .panel
+                  h5.item_name Item Name5
+                  select.item_size
+                    option(value='Small')  Small 
+                    option(value='Medium')  Medium 
+                    option(value='Large')  Large 
+                  input.item_Quantity(type='text', value='1')
+                  h6.subheader.item_price $3.00
+                  a.item_add(href='javascript:;')  Add to Cart 
+              .large-4.small-6.columns.simpleCart_shelfItem
+                img.item_image(src='http://placehold.it/500x500&text=Thumbnail')
+                .panel
+                  h5.item_name Item Name6
+                  select.item_size
+                    option(value='Small')  Small 
+                    option(value='Medium')  Medium 
+                    option(value='Large')  Large 
+                  input.item_Quantity(type='text', value='1')
+                  h6.subheader.item_price $5.00
+                  a.item_add(href='javascript:;')  Add to Cart 
+

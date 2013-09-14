@@ -1,0 +1,186 @@
+!!! 5
+html
+  head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      title kiqueShop
+      link(rel='stylesheet', href='css/normalize.css')
+      link(rel='stylesheet', href='css/foundation.min.css')
+      link(rel='stylesheet', href='css/main.css')
+      script(src='js/vendor/custom.modernizr.js')
+  body
+    nav.top-bar
+      ul.title-area
+        li.name
+          h1
+            a(href='/')
+              | KiqueShop
+        li.toggle-topbar.menu-icon
+          a(href='#')
+            span menu
+      section.top-bar-section
+        ul.left
+          li.divider
+          li.has-dropdown
+            a(href='#') Main Item 1
+            ul.dropdown
+              li
+                label Section Name
+              li.has-dropdown
+                a(href='#') Has Dropdown, Level 1
+                ul.dropdown
+                  li
+                    a(href='#') Dropdown Options
+                  li
+                    a(href='#') Dropdown Options
+                  li
+                    a(href='#') Level 2
+                  li
+                    a(href='#') Subdropdown Option
+                  li
+                    a(href='#') Subdropdown Option
+                  li
+                    a(href='#') Subdropdown Option
+              li
+                a(href='#') Dropdown Option
+              li
+                a(href='#') Dropdown Option
+              li.divider
+              li
+                label Section Name
+              li
+                a(href='#') Dropdown Option
+              li
+                a(href='#') Dropdown Option
+              li
+                a(href='#') Dropdown Option
+              li.divider
+              li
+                a(href='#') See all →
+          li.divider
+          li
+            a(href='#') Main Item 2
+          li.divider
+          li.has-dropdown
+            a(href='#') Main Item 3
+            ul.dropdown
+              li
+                a(href='#') Dropdown Option
+              li
+                a(href='#') Dropdown Option
+              li
+                a(href='#') Dropdown Option
+              li.divider
+              li
+                a(href='#') See all →
+        ul.right
+          li.has-button
+            a.small.button.radius.success(data-reveal-id='checkoutModal', href='#')
+              span.simpleCart_quantity
+              | Shopping Cart
+
+    #checkoutModal.reveal-modal
+      h2 Cart
+      .simpleCart_items
+      a.simpleCart_checkout(href='javascript:;')
+      .totalDiv
+        h4.totalText
+          | Total:
+          .simpleCart_total
+        a.simpleCart_checkout.large.button.radius(href='javascript:;') Checkout
+      a.close-reveal-modal ×
+
+    
+    block content
+     
+    footer.row
+      .large-12.columns
+        hr
+        .row
+          .large-6.columns
+            p © Copyright no one at all. Go to town.
+          .large-6.small-12.columns
+            ul.inline-list.right
+              li
+                a(href='#') Link 1
+              li
+                a(href='#') Link 2
+              li
+                a(href='#') Link 3
+              li
+                a(href='#') Link 4
+
+    script(src='http://code.jquery.com/jquery-1.10.1.min.js')
+    script(src='js/simpleCart.min.js')
+    script
+      simpleCart({
+        cartColumns: [
+        { attr: "image", label:false, view: "image"},
+        { attr: "name", label: "Name"},
+        { view: "currency", attr: "price", label: "Price"},
+        { view: "decrement", label: false},
+        { attr: "quantity", label: "Qty"},
+        { view: "increment", label: false},
+        { view: "currency", attr: "total", label: "SubTotal" },
+        { view: "remove", text: "Remove", label: false}
+        ],
+        cartStyle: "table",
+
+        checkout: {
+        type: "PayPal" ,
+        email: "you@yours.com"
+        },
+
+        currency: "USD",
+
+        data: {},
+
+        language: "english-us",
+
+        excludeFromCheckout: [],
+
+        shippingCustom: null,
+ 
+        shippingFlatRate: 0,
+
+        shippingQuantityRate: 0,
+
+        shippingTotalRate: 0,
+
+        taxRate: 0,
+
+        taxShipping: false,
+
+        beforeAdd     : null,
+        afterAdd      : null,
+        load        : null,
+        beforeSave    : null,
+        afterSave     : null,
+        update      : null,
+        ready     : null,
+        checkoutSuccess : null,
+        checkoutFail    : null,
+        beforeCheckout    : null,
+        beforeRemove           : null
+        });
+
+    script(src='js/foundation.min.js')
+    script.
+      document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') + '.js><\\/script>');
+    script(src='js/foundation/foundation.js')
+    script(src='js/foundation/foundation.alerts.js')
+    script(src='js/foundation/foundation.clearing.js')
+    script(src='js/foundation/foundation.cookie.js')
+    script(src='js/foundation/foundation.dropdown.js')
+    script(src='js/foundation/foundation.forms.js')
+    script(src='js/foundation/foundation.joyride.js')
+    script(src='js/foundation/foundation.magellan.js')
+    script(src='js/foundation/foundation.orbit.js')
+    script(src='js/foundation/foundation.placeholder.js')
+    script(src='js/foundation/foundation.reveal.js')
+    script(src='js/foundation/foundation.section.js')
+    script(src='js/foundation/foundation.tooltips.js')
+    script(src='js/foundation/foundation.topbar.js')
+    script(src='js/foundation/foundation.interchange.js')
+    script.
+      $(document).foundation();

@@ -1,0 +1,78 @@
+/*.top-bar-section ul li>a.button {
+	display:none;
+}*/
+.totalDiv{
+	float:right;
+	margin-right:20px;
+}
+.simpleCart_quantity{
+	padding-right:5px;
+}
+.has-button{
+	margin-right: 10px;
+}
+/*CHECKO)UT CSS TABLE*/
+.simpleCart_items table{
+  border:1px solid #ccc;
+}
+.simpleCart_items th{
+  color:#333;
+  text-align:left;
+  padding:10px 30px;
+  border-bottom:1px solid #ccc;
+  background: #ededed;
+  background: -moz-linear-gradient(top,  #f7f7f7 0%, #ededed 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ededed));
+  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  background: -o-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  background: -ms-linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  background: linear-gradient(top,  #f7f7f7 0%,#ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ededed',GradientType=0 );
+}
+.simpleCart_items td{
+  vertical-align:middle;
+  border-bottom:1px solid #ccc;
+  
+}
+.item-image,
+.item-image img{width:72px;}
+.item-name{width:50%;}
+.item-quantity,
+.item-quantity input{
+  width:30px;
+  text-align:center;
+}
+.item-price,
+.item-subtotal{width:50px;}
+
+/*QUERIES RESPONSIVE*/
+@media (max-width: 939px) {
+	.simpleCart_items table{
+	  font-size:15px;
+	}
+	.simpleCart_items th{
+	  padding:0px;
+	}
+	.simpleCart_items td{
+	  padding:0px;
+	  
+	}
+	.has-button{
+		margin-right: 0px;
+	}
+	.orbit-next, .orbit-prev{
+		width: 20px !important;
+		height: 40px !important;
+	}
+	.orbit-prev>span{
+		margin-left: -15px !important;
+	}
+	.orbit-container{
+		margin:0 auto;
+		width:95%;
+	}
+
+/*	.has-button{
+		margin-right: 0px;
+	}*/
+}
