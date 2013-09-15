@@ -22,7 +22,7 @@ html
         ul.left
           li.divider
           li.has-dropdown
-            a(href='#') Main Item 1
+            a(href='/main1') Main Item 1
             ul.dropdown
               li
                 label Section Name
@@ -59,10 +59,10 @@ html
                 a(href='#') See all →
           li.divider
           li
-            a(href='#') Main Item 2
+            a(href='/main2') Main Item 2
           li.divider
           li.has-dropdown
-            a(href='#') Main Item 3
+            a(href='/main3') Main Item 3
             ul.dropdown
               li
                 a(href='#') Dropdown Option
@@ -98,7 +98,7 @@ html
         hr
         .row
           .large-6.columns
-            p © Copyright no one at all. Go to town.
+            p © Copyright no one at all.
           .large-6.small-12.columns
             ul.inline-list.right
               li
@@ -110,9 +110,9 @@ html
               li
                 a(href='#') Link 4
 
-    script(src='http://code.jquery.com/jquery-1.10.1.min.js')
+    script(src='js/jquery-1.10.1.min.js')
     script(src='js/simpleCart.min.js')
-    script
+    script.
       simpleCart({
         cartColumns: [
         { attr: "image", label:false, view: "image"},

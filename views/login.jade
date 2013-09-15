@@ -2,7 +2,15 @@ extends layout
 
 block content
   .row
-      .large-12.columns 
-        h1 Login
-        div
-          | lol
+    .large-12.columns 
+      h1 Login
+      form
+        .row
+          .large-4.columns
+            label 
+              h6 Email:
+            input(type='text', placeholder='large-12.columns')
+            label 
+              h6 Password:
+            input(type='text', placeholder='large-12.columns')
+

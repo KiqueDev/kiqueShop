@@ -22,24 +22,44 @@ app.get('/', function(req, res){
     title: 'Home'
   });
 });
+app.get('/main1', function(req, res){
+  res.render('main1', {
+    title: 'Main1'
+  });
+});
+app.get('/main2', function(req, res){
+  res.render('main2', {
+    title: 'Main2'
+  });
+});
+app.get('/main3', function(req, res){
+  res.render('main3', {
+    title: 'Main3'
+  });
+});
 app.get('/login', function(req, res){
   res.render('login', {
     title: 'Login'
   });
 });
-app.all('/admin', requireLogin, function(req, res, next) {
-  next(); // if the middleware allowed us to get here,
-          // just move on to the next route handler
+app.get('/admin', function(req, res){
+  res.render('admin', {
+    title: 'Admin'
+  });
 });
+// app.all('/admin', requireLogin, function(req, res, next) {
+//   next(); // if the middleware allowed us to get here,
+//           // just move on to the next route handler
+// });
 
-function requireLogin(req, res, next) {
-  if (false) {
-  	next();
-  } else {
-    // require the user to log in
-    res.redirect("/login"); // or render a form, etc.
-  }
-}
+// function requireLogin(req, res, next) {
+//   if (false) {
+//   	next();
+//   } else {
+//     // require the user to log in
+//     res.redirect("/login"); // or render a form, etc.
+//   }
+// }
 // app.get('/users', users.findAllRecords);
 // app.get('/deleteAll', users.delAllRecords);
 // app.post('/register', users.addNewUser);
