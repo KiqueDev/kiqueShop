@@ -110,13 +110,14 @@ html
               li
                 a(href='#') Link 4
 
-    script(src='js/jquery-1.10.1.min.js')
+    script(src='http://code.jquery.com/jquery-1.10.1.min.js')
     script(src='js/simpleCart.min.js')
     script.
       simpleCart({
         cartColumns: [
-        { attr: "image", label:false, view: "image"},
+        { attr: "image", label:"Image", view: "image"},
         { attr: "name", label: "Name"},
+        { attr: "size", label: "Size"},
         { view: "currency", attr: "price", label: "Price"},
         { view: "decrement", label: false},
         { attr: "quantity", label: "Qty"},
