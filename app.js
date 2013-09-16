@@ -2,7 +2,6 @@
 var express = require('express');
 var path = require('path');
 var http = require('http');
-// var users = require('./routes/users');
 var app = express();
 
 app.configure(function () {
