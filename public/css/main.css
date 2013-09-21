@@ -44,6 +44,28 @@
 .item-price,
 .item-subtotal{width:50px;}
 
+.item_image{
+/*	padding-left: 12px;
+	padding-bottom: 12px;*/
+}
+.item_add{
+	/*padding-left: 10px;*/
+}
+.item_Quantity{
+	display: inline !important;
+	width:50px !important;
+	margin-top: 5px !important;
+	margin-right: 50px !important;
+}
+.item_price{
+	float:left;
+	margin-right: 30px;
+}
+.orbit-container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 /*QUERIES RESPONSIVE*/
 @media (max-width: 1170px) {
 	.simpleCart_items th{
@@ -58,7 +80,11 @@
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 765px) {
+	.large-12 {
+		padding-bottom: 15px;
+		margin-top: 10px;
+	}
 	.simpleCart_items table{
 	  font-size:15px;
 	}
@@ -93,4 +119,8 @@
 		margin:0 auto;
 		width:95%;
 	}
+	.item_price{
+		margin-top: 10px !important;
+	}
+
 }

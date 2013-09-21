@@ -9,75 +9,76 @@ html
       link(rel='stylesheet', href='css/main.css')
       script(src='js/vendor/custom.modernizr.js')
   body
-    nav.top-bar
-      ul.title-area
-        li.name
-          h1
-            a(href='/')
-              | KiqueShop
-        li.toggle-topbar.menu-icon
-          a(href='#')
-            span menu
-      section.top-bar-section
-        ul.left
-          li.divider
-          li.has-dropdown
-            a(href='/main1') Main Item 1
-            ul.dropdown
-              li
-                label Section Name
-              li.has-dropdown
-                a(href='#') Has Dropdown, Level 1
-                ul.dropdown
-                  li
-                    a(href='#') Dropdown Options
-                  li
-                    a(href='#') Dropdown Options
-                  li
-                    a(href='#') Level 2
-                  li
-                    a(href='#') Subdropdown Option
-                  li
-                    a(href='#') Subdropdown Option
-                  li
-                    a(href='#') Subdropdown Option
-              li
-                a(href='#') Dropdown Option
-              li
-                a(href='#') Dropdown Option
-              li.divider
-              li
-                label Section Name
-              li
-                a(href='#') Dropdown Option
-              li
-                a(href='#') Dropdown Option
-              li
-                a(href='#') Dropdown Option
-              li.divider
-              li
-                a(href='#') See all →
-          li.divider
-          li
-            a(href='/main2') Main Item 2
-          li.divider
-          li.has-dropdown
-            a(href='/main3') Main Item 3
-            ul.dropdown
-              li
-                a(href='#') Dropdown Option
-              li
-                a(href='#') Dropdown Option
-              li
-                a(href='#') Dropdown Option
-              li.divider
-              li
-                a(href='#') See all →
-        ul.right
-          li.has-button
-            a.small.button.radius.success(data-reveal-id='checkoutModal', href='#')
-              span.simpleCart_quantity
-              | Shopping Cart
+    .fixed
+      nav.top-bar
+        ul.title-area
+          li.name
+            h1
+              a(href='/')
+                | KiqueShop
+          li.toggle-topbar.menu-icon
+            a(href='#')
+              span menu
+        section.top-bar-section
+          ul.left
+            li.divider
+            li.has-dropdown
+              a(href='/main1') Main Item 1
+              ul.dropdown
+                li
+                  label Section Name
+                li.has-dropdown
+                  a(href='#') Has Dropdown, Level 1
+                  ul.dropdown
+                    li
+                      a(href='#') Dropdown Options
+                    li
+                      a(href='#') Dropdown Options
+                    li
+                      a(href='#') Level 2
+                    li
+                      a(href='#') Subdropdown Option
+                    li
+                      a(href='#') Subdropdown Option
+                    li
+                      a(href='#') Subdropdown Option
+                li
+                  a(href='#') Dropdown Option
+                li
+                  a(href='#') Dropdown Option
+                li.divider
+                li
+                  label Section Name
+                li
+                  a(href='#') Dropdown Option
+                li
+                  a(href='#') Dropdown Option
+                li
+                  a(href='#') Dropdown Option
+                li.divider
+                li
+                  a(href='#') See all →
+            li.divider
+            li
+              a(href='/main2') Main Item 2
+            li.divider
+            li.has-dropdown
+              a(href='/main3') Main Item 3
+              ul.dropdown
+                li
+                  a(href='#') Dropdown Option
+                li
+                  a(href='#') Dropdown Option
+                li
+                  a(href='#') Dropdown Option
+                li.divider
+                li
+                  a(href='#') See all →
+          ul.right
+            li.has-button
+              a.small.button.radius.success(data-reveal-id='checkoutModal', href='#')
+                span.simpleCart_quantity
+                | Shopping Cart
 
     #checkoutModal.reveal-modal
       h2 Cart
